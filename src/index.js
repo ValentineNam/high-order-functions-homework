@@ -1,5 +1,5 @@
 const task1 = (arr) => {
-    arr.array.forEach(element => {
+    arr.forEach(element => {
         console.log(`Привет, ${element}`);
     });
 }
