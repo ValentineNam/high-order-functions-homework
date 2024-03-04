@@ -71,5 +71,5 @@ const t5Result= task5(t5Array);
 console.log('Task 5');
 console.log(`Array:`);
 console.log(t5Array);
-console.log(`Modified array:`);
+console.log(`Result:`);
 console.log(t5Result);
