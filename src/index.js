@@ -1,6 +1,6 @@
 const task1 = (arr) => {
-  arr.forEach(element => {
-      console.log(`Привет, ${element}`);
+  arr.forEach(elem => {
+      console.log(`Привет, ${elem}`);
   });
 };
 
@@ -10,7 +10,7 @@ console.log('Task 1');
 task1(t1Array);
 
 const task2 = (arr) => {
-  return arr.map(element => element * 10);
+  return arr.map(elem => elem * 10);
 };
 
 const t2Array = [1, 2, 3, 4, 5];
@@ -23,7 +23,7 @@ console.log(`Modified array:`);
 console.log(t2ModifiedArray);
 
 const task3 = (arr) => {
-  return arr.filter(element => element > 10);
+  return arr.filter(elem => elem > 10);
 };
 
 const t3Array = [5, 12, 8, 130, 44];
@@ -37,8 +37,8 @@ console.log(t3ModifiedArray);
 
 const task4 = (arr) => {
   return arr
-    .filter(element => element.age > 18)
-    .map(element => `${element.name} (${element.age} лет)`);
+    .filter(elem => elem.age > 18)
+    .map(elem => `${elem.name} (${elem.age} лет)`);
 }
 
 const t4Array = [
@@ -57,4 +57,19 @@ console.log(t4Array);
 console.log(`Modified array:`);
 console.log(t4ModifiedArray);
 
+const task5 = (arr) => {
+  return arr.reduce((acc, elem) => acc + elem.price * elem.quantity, 0)
+}
 
+const t5Array = [
+  {product: 'Телефон', price: 50000, quantity: 1},
+  {product: 'Чехол', price: 1500, quantity: 2},
+  {product: 'Зарядное устройство', price: 2500, quantity: 1}
+];
+const t5ModifiedArray = task5(t5Array);
+
+console.log('Task 5');
+console.log(`Array:`);
+console.log(t5Array);
+console.log(`Modified array:`);
+console.log(t5ModifiedArray);
