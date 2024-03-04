@@ -21,3 +21,16 @@ console.log(`Array:`);
 console.log(t2Array);
 console.log(`Modified array:`);
 console.log(t2ModifiedArray);
+
+const task3 = (arr) => {
+    return arr.filter(element => element > 10);
+};
+
+const t3Array = [5, 12, 8, 130, 44];
+const t3ModifiedArray = task3(t3Array);
+
+console.log('Task 3');
+console.log(`Array:`);
+console.log(t3Array);
+console.log(`Modified array:`);
+console.log(t3ModifiedArray);
