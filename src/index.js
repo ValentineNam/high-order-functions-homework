@@ -66,7 +66,7 @@ const t5Array = [
   {product: 'Чехол', price: 1500, quantity: 2},
   {product: 'Зарядное устройство', price: 2500, quantity: 1}
 ];
-const t5ModifiedArray = task5(t5Array);
+const t5Result= task5(t5Array);
 
 console.log('Task 5');
 console.log(`Array:`);
