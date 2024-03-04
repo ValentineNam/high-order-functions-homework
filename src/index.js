@@ -72,4 +72,4 @@ console.log('Task 5');
 console.log(`Array:`);
 console.log(t5Array);
 console.log(`Modified array:`);
-console.log(t5ModifiedArray);
+console.log(t5Result);
